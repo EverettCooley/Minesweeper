@@ -7,6 +7,6 @@ grid_size=sys.argv[1]
 bomb_count=sys.argv[2]
 
 app = QApplication([])
-mainWindow = MainWindow(gird_size, bomb_count)
+mainWindow = MainWindow(grid_size, bomb_count)
 mainWindow.show()
 app.exec_()
