@@ -141,49 +141,49 @@ class MineModel():
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i - 1, col_i)
 		
-		# ABOVE-LEFT: check if above neighbor is within bounds and jump to it
+		# ABOVE-LEFT
 		if (row_i - 1 >= 0) and (col_i - 1 >= 0):
 			temp = [str(row_i - 1), str(col_i - 1)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i - 1, col_i - 1)
 
-		# BELOW-RIGHT: check if above neighbor is within bounds and jump to it
+		# BELOW-RIGH
 		if (row_i < self.row_n - 1) and (col_i < self.col_n - 1):
 			temp = [str(row_i + 1), str(col_i + 1)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i + 1, col_i + 1)
 		
-		# BELOW-LEFT: check if above neighbor is within bounds and jump to it
+		# BELOW-LEFT
 		if (row_i < self.row_n - 1) and (col_i - 1 >= 0):
 			temp = [str(row_i + 1), str(col_i - 1)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i + 1, col_i - 1)
 
-		# ABOVE-RIGHT: check if above neighbor is within bounds and jump to it
+		# ABOVE-RIGHT
 		if (row_i - 1 >= 0) and (col_i < self.col_n - 1):
 			temp = [str(row_i - 1), str(col_i + 1)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i - 1, col_i + 1)
 
-		# BELOW: check if above neighbor is within bounds and jump to it
+		# BELOW
 		if (row_i < self.row_n - 1):
 			temp = [str(row_i + 1), str(col_i)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i + 1, col_i)
 		
-		# RIGHT: check if above neighbor is within bounds and jump to it
+		# RIGHT
 		if (col_i < self.col_n - 1):
 			temp = [str(row_i), str(col_i + 1)]
 			if temp not in self.seen_points_list:
 				self.seen_points_list.append(temp)
 				self.expand_grid(row_i, col_i + 1)
 
-		# LEFT: check if above neighbor is within bounds and jump to it
+		# LEFT
 		if (col_i - 1 >= 0):
 			temp = [str(row_i), str(col_i - 1)]
 			if temp not in self.seen_points_list:
