@@ -1,10 +1,5 @@
 import random
 
-# self.grid = [["#","#","#","#"], # "#" = unclicked
-#         	   ["#","#","#","#"], # "_" = clicked
-#         	   ["#","#","#","b"], # "b" = bomb
-#         	   ["#","#","#","#"]]
-
 class MineModel():
 	def __init__(self, row_n, col_n, bomb_n):
 
