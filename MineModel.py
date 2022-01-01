@@ -12,17 +12,12 @@ class MineModel():
 
 		# setup grid
 		for i in range(self.row_n):
-			temp_l = []
+			temp = []
 			for j in range(self.col_n):
-				temp_l.append("#")
-			self.grid.append(temp_l)
-		
-		# setup uncovered_grid that holds which squares should have their bomb numbers shown
-		for i in range(self.row_n):
-			temp_l = []
-			for j in range(self.col_n):
-				temp_l.append("#")
-			self.uncovered_grid.append(temp_l)
+				temp.append("#")
+			temp_copy = temp.copy()
+			self.grid.append(temp)
+			self.uncovered_grid.append(temp_copy)
 
 		# fills grid with bombs
 		if ((self.row_n * self.col_n) > self.bomb_n):
