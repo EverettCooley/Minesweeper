@@ -1,6 +1,6 @@
 # Minesweeper
 
-Simple game of minesweeper where you have to avoid the bombs and reveal all hidden squares.
+Simple game of minesweeper. Reveal all the hidden squares while avoiding the bombs.
 
 <img width="442" alt="Screen Shot 2022-01-04 at 1 14 05 AM" src="https://user-images.githubusercontent.com/39889137/148036766-753d5e9c-f5df-41e1-9891-71a905c4a540.png">
 
@@ -17,6 +17,10 @@ where the board is a 10 by 10 with 5 bombs
 **Requirements:**
 
 PyQt5
+
+Install PyQt5 by running
+```
+pip install PyQt5
 
 **How to win:**
 
