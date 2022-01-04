@@ -21,6 +21,7 @@ PyQt5
 Install PyQt5 by running
 ```
 pip install PyQt5
+```
 
 **How to win:**
 
