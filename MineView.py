@@ -101,7 +101,7 @@ class MainWindow(QMainWindow):
 
 		# make a new model and get its main variables
 		self.current_model = MineModel(self.row_n, self.col_n, self.bombs)
-		self.cur_model_grid = MineModel.get_grid(self.current_model)
+		self.cur_model_grid = MineModel.get_neighboring_bombs_grid(self.current_model)
 		self.cur_model_uncovered_grid = MineModel.get_uncovered_grid(self.current_model)
 		
 		# fills the grid with buttons and connects them up to be pressed
