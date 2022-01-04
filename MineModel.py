@@ -83,7 +83,7 @@ class MineModel():
 					return False
 		return True
 	
-
+	
 	def get_uncovered_grid(self):
 		return self.uncovered_grid
 
@@ -113,10 +113,10 @@ class MineModel():
 	# expand the grid recursivly like the true minesweeper game
 	def expand_grid(self, row, col):
 
-		# reveal current
+		# reveal current square
 		self.uncover_square(row, col)
 
-		# if greater than 0 return 
+		# if square has a number displayed, return 
 		if int(self.neighboring_bombs_grid[row][col]) > 0:
 			return
 
