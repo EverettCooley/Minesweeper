@@ -67,7 +67,7 @@ class MainWindow(QMainWindow):
 		self.upperlayout.addLayout(self.button_layout)
 		
 	
-		# Grid layout
+		# grid layout
 		self.grid = QGridLayout()
 		self.grid.setHorizontalSpacing(0)
 		self.grid.setVerticalSpacing(0)
