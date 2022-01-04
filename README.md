@@ -2,6 +2,8 @@
 
 Simple game of minesweeper where you have to avoid the bombs and reveal all hidden squares.
 
+<img width="442" alt="Screen Shot 2022-01-04 at 1 14 05 AM" src="https://user-images.githubusercontent.com/39889137/148036766-753d5e9c-f5df-41e1-9891-71a905c4a540.png">
+
 **How to run:**
 
 run the main.py followed by the board size and bomb count. e.g.
